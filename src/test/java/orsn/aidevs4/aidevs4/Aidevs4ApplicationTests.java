@@ -1,4 +1,4 @@
-package oren.aidevs4.aidevs4;
+package orsn.aidevs4.aidevs4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
