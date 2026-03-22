@@ -31,6 +31,7 @@ This is a **Spring Boot CLI application** using Spring Shell for interactive com
 **Key dependencies:**
 - Spring Boot 4.0.4
 - Spring Shell 4.0.1 — commands are defined as methods annotated with `@Command` on Spring-managed beans
+- `spring-shell-jline` — must be added explicitly; Spring Shell 4.x makes JLine optional, so without it tab completion and command history don't work (the shell falls back to dumb terminal mode)
 - Java 25 (configured via Gradle toolchain)
 
 **Adding shell commands:** Annotate a method with `@Command` (and optionally `@CommandAvailability`) in any Spring-managed component. Spring Shell auto-discovers them.
